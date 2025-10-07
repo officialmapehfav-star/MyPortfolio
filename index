@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OfficialMapehFav — Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+    :root {
+      --accent1: #7c3aed;
+      --accent2: #06b6d4;
+      --bg: #0f1724;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(-45deg, #0f1724, #101a2d, #121f34, #0f1724);
+      background-size: 400% 400%;
+      animation: gradientShift 12s ease infinite;
+      color: #e6eef8;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: 48px auto;
+      padding: 28px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent1), var(--accent2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      color: white;
+    }
+
+    .intro {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .intro h2 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .intro p {
+      font-size: 17px;
+      color: rgba(230,238,248,0.85);
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.03);
+      border-radius: 16px;
+      padding: 20px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 6px 24px rgba(2,6,23,0.6);
+    }
+
+    h1 { font-size: 28px; margin: 0 0 6px; }
+    p.lead { margin: 0 0 18px; color: rgba(230,238,248,0.85); }
+
+    .experience {
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .job {
+      padding: 16px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.02);
+      border-left: 3px solid var(--accent1);
+    }
+
+    .job h3 { margin: 0 0 4px; }
+    .job p { margin: 0; font-size: 14px; color: rgba(230,238,248,0.75); }
+
+    .side-profile {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .profile-media {
+      height: 220px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--accent2), var(--accent1));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 250px;
+      border-radius: 12px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: rgba(230,238,248,0.8);
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .socials {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .socials a {
+      color: rgba(230,238,248,0.9);
+      text-decoration: none;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover { color: white; }
+
+    #local-time {
+      font-weight: 700;
+      font-size: 15px;
+      margin-top: 10px;
+      color: rgba(230,238,248,0.9);
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">OM</div>
+        <div>
+          <div style="font-weight:800">OfficialMapehFav</div>
+          <div style="font-size:12px;color:rgba(230,238,248,0.6)">Lua Scripter • Developer</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <h2>About Me</h2>
+      <p>
+        I'm <strong>OfficialMapehFav</strong>, a passionate Lua scripter and developer who began coding in <strong>August 2023</strong>.  
+        I specialize in crafting optimized systems, improving performance, and developing high-quality scripts for game environments.  
+        My goal is to deliver clean, reliable, and professional Lua code that exceeds client expectations every time.
+      </p>
+    </section>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Experience</h1>
+        <div id="local-time">Local Time: ...</div>
+
+        <div class="experience">
+          <div class="job">
+            <h3>Amazark Corporation — Lead Company Engineer</h3>
+            <p>August 30, 2025 - Present</p>
+            <p>I work as a Lead Company Engineer, handling commissions and ensuring customer satisfaction.</p>
+          </div>
+
+          <div class="job">
+            <h3>Vortex Development — Company Developer</h3>
+            <p>August 30, 2025 - Present</p>
+            <p>Responsible for developing Lua systems and managing commissions with quality and precision.</p>
+          </div>
+
+          <div class="job">
+            <h3>WBM Games — Scripter</h3>
+            <p>June 25 - July 25, 2025</p>
+            <p>Worked on "Coin Stack Simulator," assisting with scripting, system creation, and bug fixing.</p>
+          </div>
+
+          <div class="job">
+            <h3>Nourity Corporation — Company Engineer</h3>
+            <p>May 25 - August 15, 2025</p>
+            <p>Handled commissions and Lua scripting projects to deliver efficient in-game systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="side-profile">
+        <div class="card profile-media">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1400&auto=format&fit=crop" alt="cover">
+        </div>
+
+        <div class="card">
+          <div style="font-weight:800;margin-bottom:8px;">Contact</div>
+          <div style="font-size:13px;color:rgba(230,238,248,0.75);margin-bottom:10px;">
+            You can reach me mainly through Discord for commissions or inquiries.
+          </div>
+          <div style="margin-bottom:10px;"><strong>Email:</strong> officialmapehfav@gmail.com</div>
+          <div style="margin-bottom:10px;"><strong>Discord:</strong> devkxiro</div>
+
+          <iframe src="https://discord.com/widget?id=1420682146812657666&theme=dark" allowtransparency="true"></iframe>
+        </div>  
+      </aside>
+    </section>
+
+    <footer class="footer">
+      © 2025 OfficialMapehFav. All Rights Reserved.
+      <div class="socials">
+        <a href="mailto:officialmapehfav@gmail.com">📧 Email</a>
+        <a href="https://discord.gg/VqrsvkgveJ">💬 Discord</a>
+        <a href="https://x.com/officialmapeh" target="_blank">🐦 Twitter</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const phTime = now.toLocaleString('en-PH', { timeZone: 'Asia/Manila', hour: 'numeric', minute: 'numeric', hour12: true });
+      document.getElementById('local-time').textContent = 'Local Time: ' + phTime;
+    }
+    updateTime();
+    setInterval(updateTime, 60000);
+  </script>
+</body>
+</html>
